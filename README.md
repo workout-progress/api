@@ -1,0 +1,23 @@
+## SETUP
+
+### Start docker
+```sh
+docker compose up -d
+```
+
+### Stop docker
+```sh
+docker compose stop
+```
+
+## Database
+
+## Create/Apply migrations
+```sh
+npx prisma migrate dev
+```
+
+### Open database
+```sh
+npx prisma studio
+```

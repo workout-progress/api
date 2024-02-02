@@ -18,6 +18,7 @@ model User {
   created_at    DateTime @default(now())
 
   trainingRoutines TrainingRoutines[]
+  checkIns         CheckIn[]
 
   @@map("users")
 }
@@ -45,4 +46,14 @@ model Trainings {
   training_routines_id String
 
   @@map("trainings")
+}
+
+model CheckIn {
+  id         String   @id @default(uuid())
+  created_at DateTime @default(now())
+
+  user    User   @relation(fields: [user_id], references: [id])
+  user_id String
+
+  @@map("check_ins")
 }

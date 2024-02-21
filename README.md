@@ -22,4 +22,4 @@ npx prisma migrate dev
 npx prisma studio
 ```
 
->> Maybe use (render)[https://render.com/] to deploy
+> Maybe use [render](https://render.com/) to deploy

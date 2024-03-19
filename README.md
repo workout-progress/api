@@ -21,3 +21,5 @@ npx prisma migrate dev
 ```sh
 npx prisma studio
 ```
+
+> Maybe use [render](https://render.com/) to deploy
